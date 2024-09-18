@@ -1,10 +1,13 @@
 
 package com.hms.model;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 /**
  *
  * @author Banna
  */
+
 public abstract class LabTest {
 
     protected String title;

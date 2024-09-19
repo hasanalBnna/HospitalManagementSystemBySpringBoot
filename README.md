@@ -1,1 +1,2 @@
-It is a Spring Boot based Project
+# SpringHMS
+ Demo Hospital Management Software using Spring

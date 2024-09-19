@@ -6,49 +6,30 @@ package com.hms.model;
 
 /**
  *
- * @author Banna
+ * @author Mushfiq
  */
-public class RadiologicalTest extends LabTest implements TestReport, CostCalculation {
-    //  String title;
-    //  double cost;
-    //  boolean isAvailable;
-    private String plateDimention;
-
+public class RadiologicalTest extends LabTest{// implements TestReport, CostCalculation{
+//    private String title;
+//    private double cost;
+//    private boolean isAvailable;
+    private String plateDimention;  
+    
     public RadiologicalTest(String title,
-                            double cost,
-                            boolean isAvailable,
-                            String plateDimention){
+                    double cost,
+                    boolean isAvailable,
+                    String plateDimention){
         this.title = title;
         this.cost = cost;
-        this.isAvailable = isAvailable;
+        this.isAvailable = isAvailable; 
         this.plateDimention = plateDimention;
     }
-
-    public String returnRTest(){
-        String output = "Test name: "+this.title+ "\r\n"
-                + "plateDimention: "+this.plateDimention
-                + " Cost: "+this.cost+"\r\n"
-                + " Availability: "+this.isAvailable;
+   
+    public String toString(){
+        String output = "Test name: "+this.title+"\n"
+                + "Cost: "+this.cost+"\n"
+                + "Plate Dimention: "+this.plateDimention+"\n"
+                + "Availability: "+this.isAvailable+"\n";
         return output;
     }
-
-    public boolean returnRTestInfo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public double CalCost(){
-        double totalCost = 0;
-
-        return totalCost;
-    }
-
-    public boolean deliverReport(){
-        return false;
-    }
-    public boolean report(){
-        return false;
-    }
-
 
 }

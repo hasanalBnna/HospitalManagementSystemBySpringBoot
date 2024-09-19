@@ -1,36 +1,39 @@
 
 package com.hms.model;
-
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+//import javax.persistence.Entity;
+import jakarta.persistence.*;
 
 /**
  *
- * @author Banna
+ * @author Muhammad Mushfiq at SIMEC Systems
  */
 
+@Entity
 public abstract class LabTest {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    protected Long id;
     protected String title;
     protected double cost;
     protected boolean isAvailable;
-
-    public LabTest(){}
+    //protected String labTestType;
+    
+    public LabTest() {}
     public LabTest(String title,
-                   double cost,
-                   boolean isAvailable){
+                    double cost,
+                    boolean isAvailable){
         this.title = title;
         this.cost = cost;
-        this.isAvailable = isAvailable;
-
+        this.isAvailable = isAvailable; 
     }
-    public String returnLabTestInfo(){
-        String output = "Test name :"+this.title+"\n"
-                +"Cost :"+this.cost+"\n"
-                +"Avaiablity :"+this.isAvailable;
+    
+    public String toString(){
+        String output = "Test name: "+this.title+"\n"
+                + "Cost: "+this.cost+"\n"
+                + "Availability: "+this.isAvailable;
         return output;
     }
+    
+    //public abstract boolean deliverReport();
 
-    public abstract boolean report();
-
-    public abstract double CalCost();
 }

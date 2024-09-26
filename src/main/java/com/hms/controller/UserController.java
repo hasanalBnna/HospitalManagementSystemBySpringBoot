@@ -30,7 +30,15 @@ public class UserController {
 
         return userService.fatchUserById(userId);
     }
-//    public String saveUser(@RequestBody String sr){
-//        return sr;
-//    }
+
+    @DeleteMapping(path = "/users/{id}")
+    public @ResponseBody String deleteUserById(@PathVariable int id){
+        userService.deleteUserById(id);
+        return "Record deleted";
+    }
+
+    @PutMapping(path = "users/{id}")
+    public @ResponseBody User updateUserById(@PathVariable int id, @RequestBody User user){
+        return userService.updateUserById(id, user);
+    }
 }

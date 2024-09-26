@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -21,11 +22,35 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public List<User> fatchUserList() {
-        return List.of();
+
+        return userRepo.findAll();
     }
 
     @Override
     public User fatchUserById(int userId) {
-        return null;
+
+        return userRepo.findById(userId).get();
     }
+
+    @Override
+    public void deleteUserById(int id) {
+        userRepo.deleteById(id);
+    }
+
+    @Override
+    public User updateUserById(int id, User user) {
+        User userToUpdate = userRepo.findById(id).get();
+
+        if(Objects.nonNull(user.getFullName()) && !"".equalsIgnoreCase(user.getFullName())) {
+            userToUpdate.setFullName(user.getFullName());
+        }
+//        user.getAge()>0
+//Objects.nonNull(user.getAge()) && !"".equalsIgnoreCase(String.valueOf(user.getAge())) //works for integer or string but not short data type
+        else if(user.getAge()>0) {
+            userToUpdate.setAge(user.getAge());
+        }
+
+        return userRepo.save(userToUpdate);
+    };
 }
+

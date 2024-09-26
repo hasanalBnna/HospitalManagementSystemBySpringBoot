@@ -10,4 +10,8 @@ public interface UserService {
     List<User> fatchUserList();
 
     User fatchUserById(int userId);
+
+    void deleteUserById(int id);
+
+    User updateUserById(int id, User user);
 }

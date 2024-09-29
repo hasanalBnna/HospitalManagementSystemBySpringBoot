@@ -12,4 +12,6 @@ public interface VaccineService {
     Vaccine fatchVaccineById(int vaccineId);
 
     void deleteVaccineById(int id);
+
+    Vaccine updateVaccineById(int id, Vaccine vaccine);
 }

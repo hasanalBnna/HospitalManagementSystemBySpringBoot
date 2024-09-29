@@ -2,6 +2,7 @@ package com.hms.service;
 
 import com.hms.model.User;
 import com.hms.repository.UserRepo;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,20 +39,31 @@ public class UserServiceImpl implements UserService{
         userRepo.deleteById(id);
     }
 
+//    @Override
+//    public User updateUserById(int id, User user) {
+//        User userToUpdate = userRepo.findById(id).get();
+//
+//        if(Objects.nonNull(user.getFullName()) && !"".equalsIgnoreCase(user.getFullName())) {
+//            userToUpdate.setFullName(user.getFullName());
+//        }
+////Objects.nonNull(user.getAge()) && !"".equalsIgnoreCase(String.valueOf(user.getAge())) //works for integer or string but not short data type
+//        else if(user.getAge()>0) {
+//            userToUpdate.setAge(user.getAge());
+//        }
+//
+//        return userRepo.save(userToUpdate);
+//    }
     @Override
-    public User updateUserById(int id, User user) {
-        User userToUpdate = userRepo.findById(id).get();
+    public @NotNull User updateUserById(@NotNull int id, @NotNull User user) {
+        @NotNull User userToUpdate = userRepo.findById(id).orElseThrow();
 
-        if(Objects.nonNull(user.getFullName()) && !"".equalsIgnoreCase(user.getFullName())) {
+        if ( user.getFullName() != null && !"".equalsIgnoreCase(user.getFullName())) {
             userToUpdate.setFullName(user.getFullName());
-        }
-//        user.getAge()>0
-//Objects.nonNull(user.getAge()) && !"".equalsIgnoreCase(String.valueOf(user.getAge())) //works for integer or string but not short data type
-        else if(user.getAge()>0) {
+        } else if (user.getAge() > 0) {
             userToUpdate.setAge(user.getAge());
         }
 
         return userRepo.save(userToUpdate);
-    };
+    }
 }
 

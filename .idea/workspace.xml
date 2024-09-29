@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a7fe59ff-22db-4026-9246-bc4e830ee553" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/controller/VaccineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/controller/VaccineController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccineService.java" afterDir="false" />
@@ -57,20 +58,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Banna/Documents/HospitalManagementSystemBySpringBoot&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Banna/Documents/HospitalManagementSystemBySpringBoot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="HospitalManagementSystemBySpringBoot" />
@@ -113,7 +115,8 @@
       <workItem from="1727346256758" duration="33000" />
       <workItem from="1727350242366" duration="2318000" />
       <workItem from="1727543431147" duration="2284000" />
-      <workItem from="1727582307822" duration="3265000" />
+      <workItem from="1727582307822" duration="9080000" />
+      <workItem from="1727597573468" duration="2906000" />
     </task>
     <servers />
   </component>

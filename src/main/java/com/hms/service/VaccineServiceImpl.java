@@ -26,4 +26,11 @@ public class VaccineServiceImpl implements VaccineService{
     public Vaccine fatchVaccineById(int vaccineId) {
         return vaccineRepo.findById(vaccineId).get();
     }
+
+    @Override
+    public void deleteVaccineById(int id) {
+        vaccineRepo.deleteById(id);
+    }
+
+    
 }

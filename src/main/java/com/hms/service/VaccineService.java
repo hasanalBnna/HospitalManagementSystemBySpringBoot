@@ -10,4 +10,6 @@ public interface VaccineService {
     List<Vaccine> fatchVaccineList();
 
     Vaccine fatchVaccineById(int vaccineId);
+
+    void deleteVaccineById(int id);
 }

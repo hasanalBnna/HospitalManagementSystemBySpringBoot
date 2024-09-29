@@ -32,4 +32,10 @@ public class VaccineController {
 
         return vaccineService.fatchVaccineById(vaccineId);
     }
+
+    @DeleteMapping(path = "/vaccine/{id}")
+    public @ResponseBody String deleteVaccineById(@PathVariable int id){
+        vaccineService.deleteVaccineById(id);
+        return "Record deleted";
+    }
 }

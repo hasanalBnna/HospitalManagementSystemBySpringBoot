@@ -4,10 +4,7 @@ import com.hms.model.HealthcareProviders;
 import com.hms.model.Vaccine;
 import com.hms.service.HealthcareProvidersService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,6 +26,13 @@ public class HealthcareProvidersController {
     public List<HealthcareProviders> fatchHealthcareProvidersList(){
 
         return healthcareProvidersService.fatchHealthcareProvidersList();
+
+    }
+
+    //localhost:5900/healthcareproviders/id
+    @GetMapping("/healthcareproviders/{id}")
+    public HealthcareProviders fatchHealthcareProviders(@PathVariable ("id") int healthcareProvidersId){
+        return healthcareProvidersService.fatchHealthcareProvidersById(healthcareProvidersId);
 
     }
 

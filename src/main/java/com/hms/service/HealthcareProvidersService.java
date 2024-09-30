@@ -9,4 +9,6 @@ public interface HealthcareProvidersService {
 
 
     List<HealthcareProviders> fatchHealthcareProvidersList();
+
+    HealthcareProviders fatchHealthcareProvidersById(int healthcareProvidersId);
 }

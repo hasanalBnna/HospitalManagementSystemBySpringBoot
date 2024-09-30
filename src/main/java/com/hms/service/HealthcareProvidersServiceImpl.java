@@ -21,4 +21,9 @@ public class HealthcareProvidersServiceImpl implements HealthcareProvidersServic
     public List<HealthcareProviders> fatchHealthcareProvidersList() {
         return healthcareProvidersRepo.findAll();
     }
+
+    @Override
+    public HealthcareProviders fatchHealthcareProvidersById(int healthcareProvidersId) {
+        return healthcareProvidersRepo.findById(healthcareProvidersId).get();
+    }
 }

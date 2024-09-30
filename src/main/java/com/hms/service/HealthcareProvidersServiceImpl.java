@@ -26,4 +26,9 @@ public class HealthcareProvidersServiceImpl implements HealthcareProvidersServic
     public HealthcareProviders fatchHealthcareProvidersById(int healthcareProvidersId) {
         return healthcareProvidersRepo.findById(healthcareProvidersId).get();
     }
+
+    @Override
+    public void deleteHealthcareProvidersById(int id) {
+        healthcareProvidersRepo.deleteById(id);
+    }
 }

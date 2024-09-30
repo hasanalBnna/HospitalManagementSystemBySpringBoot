@@ -36,4 +36,12 @@ public class HealthcareProvidersController {
 
     }
 
+    //localhost:5900/healthcareproviders/id
+    @DeleteMapping("/healthcareproviders/{id}")
+    public @ResponseBody String deleteHealthcareProvidersById(@PathVariable int id){
+
+        healthcareProvidersService.deleteHealthcareProvidersById(id);
+        return "Healthcare provider deleted";
+    }
+
 }

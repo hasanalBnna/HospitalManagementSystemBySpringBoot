@@ -17,16 +17,19 @@ public class VaccineServiceImpl implements VaccineService{
 
     @Override
     public Vaccine saveVaccine(Vaccine vaccine) {
+
         return vaccineRepo.save(vaccine);
     }
 
     @Override
     public List<Vaccine> fatchVaccineList() {
+
         return vaccineRepo.findAll();
     }
 
     @Override
     public Vaccine fatchVaccineById(int vaccineId) {
+
         return vaccineRepo.findById(vaccineId).get();
     }
 

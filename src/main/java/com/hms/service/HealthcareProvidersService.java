@@ -13,4 +13,6 @@ public interface HealthcareProvidersService {
     HealthcareProviders fatchHealthcareProvidersById(int healthcareProvidersId);
 
     void deleteHealthcareProvidersById(int id);
+
+    HealthcareProviders updateHealthcareProvidersById(int id, HealthcareProviders healthcareProviders);
 }

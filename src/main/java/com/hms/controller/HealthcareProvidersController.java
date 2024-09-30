@@ -44,4 +44,10 @@ public class HealthcareProvidersController {
         return "Healthcare provider deleted";
     }
 
+    //localhost:5900/
+    @PutMapping("/healthcareproviders/{id}")
+    public @ResponseBody HealthcareProviders updateHealthcareProvidersById(@PathVariable int id, @RequestBody HealthcareProviders healthcareProviders){
+        return healthcareProvidersService.updateHealthcareProvidersById(id, healthcareProviders);
+    }
+
 }

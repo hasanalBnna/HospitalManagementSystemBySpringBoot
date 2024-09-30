@@ -5,6 +5,8 @@ import com.hms.repository.HealthcareProvidersRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class HealthcareProvidersServiceImpl implements HealthcareProvidersService{
     @Autowired
@@ -13,5 +15,10 @@ public class HealthcareProvidersServiceImpl implements HealthcareProvidersServic
     @Override
     public HealthcareProviders saveHealthcareProviders(HealthcareProviders healthcareProviders) {
         return healthcareProvidersRepo.save(healthcareProviders);
+    }
+
+    @Override
+    public List<HealthcareProviders> fatchHealthcareProvidersList() {
+        return healthcareProvidersRepo.findAll();
     }
 }

@@ -39,5 +39,10 @@ public class VaccinationRecordsController {
         return "Record deleted";
     }
 
+    @PutMapping(path = "vaccinationRecords/{id}")
+    public @ResponseBody VaccinationRecords updateVaccinationRecordsById(@PathVariable int id, @RequestBody VaccinationRecords vaccinationRecords){
+        return vaccinationRecordsService.updateVaccinationRecordsById(id, vaccinationRecords);
+    }
+
 
 }

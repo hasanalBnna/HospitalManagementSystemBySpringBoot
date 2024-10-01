@@ -1,9 +1,8 @@
 package com.hms.service;
 
 import com.hms.model.VaccinationRecords;
-import com.hms.model.Vaccine;
-import com.hms.repository.UserRepo;
 import com.hms.repository.VaccinationRecordsRepo;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,6 +33,20 @@ public class VaccinationRecordsServiceImpl implements VaccinationRecordsService{
     public void deleteVaccinationRecordsById(int id) {
         vaccinationRecordsRepo.deleteById(id);
     }
+
+    @Override
+    public @NotNull VaccinationRecords updateVaccinationRecordsById(@NotNull int id,@NotNull VaccinationRecords vaccinationRecords) {
+        @NotNull  VaccinationRecords vaccinationRecordsToUpdate = vaccinationRecordsRepo.findById(id).orElseThrow();
+
+        if ( vaccinationRecords.getDateVaccinated() != null && !"".equalsIgnoreCase(String.valueOf(vaccinationRecords.getDateVaccinated()))) {
+            vaccinationRecordsToUpdate.setDateVaccinated(vaccinationRecords.getDateVaccinated());
+        } else if ( vaccinationRecords.getNextDoseDate() != null && !"".equalsIgnoreCase(String.valueOf(vaccinationRecords.getNextDoseDate()))) {
+            vaccinationRecordsToUpdate.setNextDoseDate(vaccinationRecords.getNextDoseDate());
+        }
+
+        return vaccinationRecordsRepo.save(vaccinationRecordsToUpdate);
+    }
+    
 
 
 }

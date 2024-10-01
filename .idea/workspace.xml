@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7fe59ff-22db-4026-9246-bc4e830ee553" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hms/controller/DiseaseInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hms/controller/VaccinationRecordsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hms/model/VaccinationRecords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hms/repository/VaccinationRecordsRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccinationRecordsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccinationRecordsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/controller/VaccinationRecordsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/controller/VaccinationRecordsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccinationRecordsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccinationRecordsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccinationRecordsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/service/VaccinationRecordsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,22 +120,11 @@
       <workItem from="1727601111530" duration="2801000" />
       <workItem from="1727675845422" duration="12961000" />
       <workItem from="1727754656411" duration="1774000" />
-      <workItem from="1727773037173" duration="2728000" />
+      <workItem from="1727773037173" duration="8552000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hms/model/Vaccine.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

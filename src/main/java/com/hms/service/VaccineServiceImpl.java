@@ -35,6 +35,7 @@ public class VaccineServiceImpl implements VaccineService{
 
     @Override
     public void deleteVaccineById(int id) {
+
         vaccineRepo.deleteById(id);
     }
 //  This is 2nd version where i use @NotNull( inferred annotation)

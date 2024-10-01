@@ -35,10 +35,6 @@ public class HealthcareProvidersServiceImpl implements HealthcareProvidersServic
     }
 
     @Override
-//    public HealthcareProviders updateHealthcareProvidersById(int id, HealthcareProviders healthcareProviders) {
-//        return null;
-//    }
-
     public @NotNull HealthcareProviders updateHealthcareProvidersById(@NotNull int id, @NotNull HealthcareProviders healthcareProviders) {
         @NotNull HealthcareProviders healthcareProvidersToUpdate = healthcareProvidersRepo.findById(id).orElseThrow();
 

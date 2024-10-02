@@ -1,7 +1,6 @@
 package com.hms.controller;
 
 
-import com.hms.model.User;
 import com.hms.model.Vaccine;
 import com.hms.service.VaccineService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,7 @@ public class VaccineController {
     @Autowired
     private VaccineService vaccineService;
 
-    @PostMapping("/vaccine")
+    @PostMapping("/vaccine/add")
     public Vaccine saveVaccine(@RequestBody Vaccine vaccine){
 
         return vaccineService.saveVaccine(vaccine);
@@ -33,13 +32,13 @@ public class VaccineController {
         return vaccineService.fatchVaccineById(vaccineId);
     }
 
-    @DeleteMapping(path = "/vaccine/{id}")
+    @DeleteMapping(path = "/vaccine/delete/{id}")
     public @ResponseBody String deleteVaccineById(@PathVariable int id){
         vaccineService.deleteVaccineById(id);
         return "Record deleted";
     }
 
-    @PutMapping(path = "vaccine/{id}")
+    @PutMapping(path = "vaccine/update/{id}")
     public @ResponseBody Vaccine updateVaccineById(@PathVariable int id, @RequestBody Vaccine vaccine){
         return vaccineService.updateVaccineById(id, vaccine);
     }

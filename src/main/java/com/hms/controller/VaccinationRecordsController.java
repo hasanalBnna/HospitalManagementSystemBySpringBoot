@@ -15,7 +15,7 @@ public class VaccinationRecordsController {
     @Autowired
     private VaccinationRecordsService vaccinationRecordsService;
 
-    @PostMapping("/vaccinationRecords")
+    @PostMapping("/vaccinationRecords/add")
     public VaccinationRecords saveVaccinationRecords(@RequestBody VaccinationRecords vaccinationRecords){
 
         return vaccinationRecordsService.saveVaccinationRecords(vaccinationRecords);
@@ -33,13 +33,13 @@ public class VaccinationRecordsController {
         return vaccinationRecordsService.fatchVaccinationRecordsById(vaccinationRecordsId);
     }
 
-    @DeleteMapping(path = "/vaccinationRecords/{id}")
+    @DeleteMapping(path = "/vaccinationRecords/delete/{id}")
     public @ResponseBody String deleteVaccinationRecordsById(@PathVariable int id){
         vaccinationRecordsService.deleteVaccinationRecordsById(id);
         return "Record deleted";
     }
 
-    @PutMapping(path = "vaccinationRecords/{id}")
+    @PutMapping(path = "vaccinationRecords/update/{id}")
     public @ResponseBody VaccinationRecords updateVaccinationRecordsById(@PathVariable int id, @RequestBody VaccinationRecords vaccinationRecords){
         return vaccinationRecordsService.updateVaccinationRecordsById(id, vaccinationRecords);
     }

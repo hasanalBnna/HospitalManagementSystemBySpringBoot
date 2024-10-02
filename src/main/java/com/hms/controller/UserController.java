@@ -13,7 +13,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/users")
+    @PostMapping("/users/add")
     public User saveUser(@RequestBody User user){
 
         return userService.saveUser(user);
@@ -31,13 +31,13 @@ public class UserController {
         return userService.fatchUserById(userId);
     }
 
-    @DeleteMapping(path = "/users/{id}")
+    @DeleteMapping(path = "/users/delete/{id}")
     public @ResponseBody String deleteUserById(@PathVariable int id){
         userService.deleteUserById(id);
         return "Record deleted";
     }
 
-    @PutMapping(path = "users/{id}")
+    @PutMapping(path = "users/update/{id}")
     public @ResponseBody User updateUserById(@PathVariable int id, @RequestBody User user){
         return userService.updateUserById(id, user);
     }

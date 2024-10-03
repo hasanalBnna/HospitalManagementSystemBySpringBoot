@@ -1,11 +1,10 @@
 package com.hms.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -18,4 +17,7 @@ public class Vaccine {
     private String type;
     private String manufacturer;
     private String dosage;
+
+    @OneToMany(mappedBy = "vaccine", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<VaccinationRecords> vaccinationRecords;
 }

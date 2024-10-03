@@ -3,6 +3,8 @@ package com.hms.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
+
 @Entity
 @Data
 public class User {
@@ -17,4 +19,10 @@ public class User {
     private char sex;
     private String address;
     private String userType;
+
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<VaccinationRecords> vaccinationRecords;
+
+
 }

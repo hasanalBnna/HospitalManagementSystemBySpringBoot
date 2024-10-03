@@ -1,9 +1,6 @@
 package com.hms.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
@@ -16,4 +13,12 @@ public class VaccinationRecords {
     private int id;
     private Date dateVaccinated;
     private Date nextDoseDate;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "vaccine_id")
+    private Vaccine vaccine;
 }

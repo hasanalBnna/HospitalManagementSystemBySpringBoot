@@ -8,7 +8,7 @@ public class RootController {
     @GetMapping(value="/")
     public String rootMap(){
 
-        return "Hello Spring! auto load after change";
+        return "Hello Checker, This is Banna. U here for check Vaccine module";
     }
 
     @RequestMapping(value="/test", method= RequestMethod.GET)

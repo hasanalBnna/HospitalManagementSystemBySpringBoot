@@ -8,8 +8,7 @@ public class RootController {
     @GetMapping(value="/")
     public String rootMap(){
 
-        return "Hello Checker, This is Banna. U here for check Vaccine module.
-            /users --->for get user info
+        return "Hello Checker, This is Banna. U here for check Vaccine module./users --->for get user info
 /users/add --->for add data to user
 /users/update --->for update data to user
 /users/delete --->for delete data to user

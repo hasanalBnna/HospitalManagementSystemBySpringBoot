@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7fe59ff-22db-4026-9246-bc4e830ee553" name="Changes" comment="">
+    <list default="true" id="a7fe59ff-22db-4026-9246-bc4e830ee553" name="Changes" comment="&quot;Entity relationship done&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/VaccinationRecords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/model/VaccinationRecords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/Vaccine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hms/model/Vaccine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/controller/DiseaseInfoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/controller/HealthcareProvidersController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/controller/LabTestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/CostCalculation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/DiseaseInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/HealthcareProviders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/LabTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/PathologicalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/RadiologicalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/model/TestReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/repository/HealthcareProvidersRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/repository/LabTestRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/HealthcareProvidersService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/HealthcareProvidersServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/LabTestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hms/service/LabTestServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,11 +140,29 @@
       <workItem from="1727773037173" duration="10400000" />
       <workItem from="1727861672966" duration="4061000" />
       <workItem from="1727882490427" duration="3629000" />
-      <workItem from="1727944509973" duration="225000" />
+      <workItem from="1727944509973" duration="1588000" />
+      <workItem from="1727972222475" duration="1238000" />
+      <workItem from="1727974143035" duration="1386000" />
+      <workItem from="1728017433190" duration="3214000" />
+      <workItem from="1728106180084" duration="1720000" />
+      <workItem from="1728215388150" duration="1163000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;Entity relationship done&quot;">
+      <option name="closed" value="true" />
+      <created>1727944864640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727944864640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Entity relationship done&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Entity relationship done&quot;" />
   </component>
 </project>

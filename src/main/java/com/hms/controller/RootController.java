@@ -8,7 +8,7 @@ public class RootController {
     @GetMapping(value="/")
     public String rootMap(){
 
-        return "Hello Checker, This is Banna. U here for check Vaccine module.";
+        return "https://documenter.getpostman.com/view/38439166/2sAXxMgtnT";
     }
 
     @RequestMapping(value="/test", method= RequestMethod.GET)
